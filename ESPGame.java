@@ -14,7 +14,7 @@ import java.util.Random;
 import java.io.*;
 import java.io.PrintWriter;
 
-public class Main {
+public class ESPGame {
     public static void main(String[] args) throws FileNotFoundException, IOException {
 
         //Prints colors to file
@@ -51,6 +51,7 @@ public class Main {
 
             File colors = new File("colors.txt");
             Scanner input = new Scanner(colors);
+
             //Prints colors from file
             while (input.hasNextLine()) {
                 String line = input.nextLine();
@@ -62,7 +63,7 @@ public class Main {
             System.exit(0);
         }
 
-        //starts game
+        //Starts game
         int round = 1;
         int points = 0;
         do {
@@ -211,5 +212,6 @@ public class Main {
         System.out.println("User name: " + name);
         System.out.println("Description: " + Desc);
         System.out.println("Date: " + Due);
+        System.out.println("\nProgrammer: Christopher Andrews");
     }
 }
